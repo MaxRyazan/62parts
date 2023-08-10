@@ -1,0 +1,83 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.block_one{
+    display: flex;
+    flex-direction: column;
+    padding-top: calc(200px + ((100) - 200) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.icons{
+    margin-top: calc(50px + ((-100) - 50) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    & img{
+        height: calc(20px + (75 - 20) * ((100vw - 320px) / (1920 - 320)));
+    }
+}
+h1{
+    animation: color 2s ease infinite;
+    color: orange;
+    font-size: calc(20px + (45 - 20) * ((100vw - 320px) / (1920 - 320)));
+    cursor: default;
+}
+h2{
+    font-size: calc(15px + (35 - 15) * ((100vw - 320px) / (1920 - 320)));
+    cursor: default;
+}
+.phone_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone {
+    color: #000;
+    font-size: 16px;
+    font-weight: 900;
+}
+.phone a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 900;
+    text-decoration: none;
+}
+.svg{
+    height: 30px;
+}
+.contacts{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
+.block_two{
+    display: none;
+}
+li{
+    margin-top: 10px;
+}
+@keyframes color {
+    0%{
+        color: orange;
+    }
+    50%{
+        color: red;
+    }
+    75%{
+        color: orangered;
+    }
+}
+@media screen and (max-width: 800.97px){
+    .block_two {
+        display: block;
+    }
+}
